@@ -12,7 +12,10 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
+      // database: './src/js/database.js',
+      // editor: './src/js/editor.js',
+      // header: './src/js/header.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -21,11 +24,9 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Plugin'
+        title: 'jate'
       }),
-     
-      // Injects our custom service worker
-   
+
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
@@ -40,8 +41,8 @@ module.exports = () => {
         description: 'Text Editor for off and online use',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -69,7 +70,7 @@ module.exports = () => {
             },
           },
         },
-        
+
       ],
     },
   };
