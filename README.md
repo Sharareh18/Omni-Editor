@@ -19,8 +19,10 @@ A progressive web application - an offline/online text editor.
   ## Usage
   
 Deployed link: 
+https://obscure-sierra-95493-4df06a11464c.herokuapp.com/
 
-
+Screenshot:
+![Alt text](Omni-editor.png)
 
   ## License
   This project is covered under the following license: MIT
